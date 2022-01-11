@@ -85,13 +85,11 @@ class Menu extends Component {
         if (e === "Sandwich"  && this.state.Sandwich > 0) {
             if(this.state.Sandwich === 1)  this.setState({ cartCount:this.state.cartCount-1 })
             this.setState({ Sandwich: this.state.Sandwich - 1 });
-           // this.setState({ SandwichPrice: this.state.Sandwich - 80 })
            this.setState({ SandwichPrice: this.state.SandwichPrice - 80 })
         }
         if (e === "Pizza"  && this.state.Pizza > 0) {
             if(this.state.Pizza === 1)  this.setState({ cartCount:this.state.cartCount-1 })
             this.setState({ Pizza: this.state.Pizza - 1 });
-            //this.setState({ PizzaPrice: this.state.Pizza - 160 })
             this.setState({ PizzaPrice: this.state.PizzaPrice - 160 })
         }
         this.setState({finalAmount:this.state.HamburgerPrice+this.state.PepsiPrice+this.state.friesPrice+this.state.CokePrice+this.state.SandwichPrice+this.state.PizzaPrice})

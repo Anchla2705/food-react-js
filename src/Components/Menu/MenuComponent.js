@@ -14,21 +14,6 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { NavLink } from "react-router-dom";
 import "../../App.css";
-import { CropSharp } from "@material-ui/icons";
-
-
-// componentDidMount() {
-//   fetch("http://128.199.27.165:8081/ticket/list")
-//     .then((res) => res.json())
-//     .then((json) => {
-//       this.setState({
-//         items: json.data,
-//         DataisLoaded: true,
-//       });
-//     });
-
-
-
 
 const useStyles = makeStyles((theme) => ({
   modal: {

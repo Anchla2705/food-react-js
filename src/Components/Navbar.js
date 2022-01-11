@@ -62,6 +62,9 @@ export default function Navbar() {
                 <Link to="/menu" className={classes.link}>
                   Menu
                 </Link>
+                <Link to="/menulist" className={classes.link}>
+                  MenuList
+                </Link>
                 <Link to="/login" className={classes.link}>
                   Login
                 </Link>

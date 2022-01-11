@@ -53,12 +53,12 @@ class App extends React.Component {
   }
   render() {
     const { DataisLoaded, items } = this.state;
-    let index = 0;
+    //let index = 0;
 
     if (!DataisLoaded)
       return (
         <div>
-          <h1> Pleses wait some time.... </h1>{" "}
+          <h1> Please wait some time.... </h1>{" "}
         </div>
       );
 
