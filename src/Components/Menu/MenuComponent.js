@@ -256,6 +256,9 @@ export default function Menu(props) {
               <Button onClick={handleClose} size="small" color="primary">
                 Cancel
               </Button>
+              <Button onClick={handleClose} size="small" color="primary">
+              ClearCart
+              </Button>
             </div>
           </div>
         </Fade>
@@ -325,6 +328,15 @@ export default function Menu(props) {
             >
               -
             </Button>
+            <Button
+            onClick={ () => props.cartCount("Hamburger")}
+            size="small"
+            variant="contained"
+            color= "primary"
+            variant="contained"
+            >
+              AddtoCart
+            </Button>
           </CardActions>
         </Card>
         <Card className={classes.cards}>
@@ -374,6 +386,15 @@ export default function Menu(props) {
             >
               -
             </Button>
+            <Button
+            onClick={ () => props.cartCount("Fries")}
+            size="small"
+            variant="contained"
+            color= "primary"
+            variant="contained"
+            >
+              AddtoCart
+            </Button>
           </CardActions>
         </Card>
         <Card className={classes.cards}>
@@ -421,6 +442,15 @@ export default function Menu(props) {
               color={props.state.Coke ? "secondary" : "default"}
             >
               -
+            </Button>
+            <Button
+            onClick={ () => props.cartCount("Coke")}
+            size="small"
+            variant="contained"
+            color= "primary"
+            variant="contained"
+            >
+              AddtoCart
             </Button>
           </CardActions>
         </Card>
@@ -470,6 +500,15 @@ export default function Menu(props) {
             >
               -
             </Button>
+            <Button
+            onClick={ () => props.cartCount("Pepsi")}
+            size="small"
+            variant="contained"
+            color= "primary"
+            variant="contained"
+            >
+              AddtoCart
+            </Button>
           </CardActions>
         </Card>
         <Card className={classes.cards}>
@@ -518,6 +557,15 @@ export default function Menu(props) {
             >
               -
             </Button>
+            <Button
+            onClick={ () => props.cartCount("Sandwich")}
+            size="small"
+            variant="contained"
+            color= "primary"
+            variant="contained"
+            >
+              AddtoCart
+            </Button>
           </CardActions>
         </Card>
         <Card className={classes.cards}>
@@ -565,6 +613,15 @@ export default function Menu(props) {
               color={props.state.Pizza? "secondary" : "default"}
             >
               -
+            </Button>
+            <Button
+            onClick={ () => props.cartCount("Pizza")}
+            size="small"
+            variant="contained"
+            color= "primary"
+            variant="contained"
+            >
+              AddtoCart
             </Button>
           </CardActions>
         </Card>

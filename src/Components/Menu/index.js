@@ -19,6 +19,7 @@ class Menu extends Component {
             SandwichPrice:0,
             PizzaPrice:0,
             finalAmount:0,
+            AddtoCart:0,
         };
     }
     Priceplus = (e) => {
@@ -95,10 +96,22 @@ class Menu extends Component {
         this.setState({finalAmount:this.state.HamburgerPrice+this.state.PepsiPrice+this.state.friesPrice+this.state.CokePrice+this.state.SandwichPrice+this.state.PizzaPrice})
 
     }
+    AddtoCart = (e) => {
+        console.log(e)
+        if (e === "Hamburger") {
+            if(this.state.Hamburger === 0)  
+            this.setState({ cartCount:this.state.cartCount+1 })
+            this.setState({ Hamburger: this.state.Hamburger + 1 });
+            this.setState({ HamburgerPrice: this.state.HamburgerPrice + 100 })
+             
+            
+        }     
+
+    }
     render() {
 
         return (
-            <MenuComponent refreshCart={this.cartChange} Priceplus={this.Priceplus} Priceminus={this.Priceminus} state={this.state} />
+            <MenuComponent refreshCart={this.cartChange} Priceplus={this.Priceplus} Priceminus={this.Priceminus} state={this.state} AddtoCart={this.cartCount} />
         )
     }
 }
